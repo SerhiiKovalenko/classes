@@ -6,6 +6,19 @@ $colors = array('red','yellow','blue','gray','maroon','brown','green').
 в которой все ячейки будут иметь цвета, выбранные случайным образом из массива $colors.
 В каждой ячейке должно находиться случайное число.*/
 
+$row = 4;
+$cols = 4;
+$colors = array('red','yellow','blue','gray','maroon','brown','green');
 
+echo "<table>";
+for ($i = 1; $i <= $row; $i++) {
+    echo "<tr>";
+    for ($x = 1; $x <= $cols; $x++) {
+        echo "<td style='background-color: ".$colors[array_rand($colors)].";'>" .rand(100, 999). "</td>";
+    }
+    echo "</tr>";
+}
+echo "</table>";
 
 ?>
+
