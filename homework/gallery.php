@@ -15,7 +15,7 @@ if (isset($_FILES['image'])) {
             move_uploaded_file ($_FILES['image']["tmp_name"], GALLERY_FOLDER . $_FILES['image']['name']);
             echo "File successful uploaded.<br>";
         } else {
-            echo "File is large!<br>";
+            echo "File is large.<br>";
         }
     } else {
         echo "Format is not supported<br>";
